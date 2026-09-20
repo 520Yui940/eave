@@ -1,0 +1,33 @@
+{
+  "name": "eave",
+  "version": "0.5.1",
+  "description": "檐 Eave - a floating status capsule for Windows 10 and 11",
+  "main": "./out/main/index.js",
+  "author": "520Yui940",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "dist": "electron-vite build && electron-builder --win --x64 --config electron-builder.yml",
+    "dist:dir": "electron-vite build && electron-builder --win --x64 --dir --config electron-builder.yml"
+  },
+  "dependencies": {
+    "koffi": "3.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "44.4.1",
+    "electron-builder": "26.15.3",
+    "electron-vite": "5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+
+# 构建产物
+out/
+dist/
+release/
+release-out/
+probe/
+
+# 运行时缓存与本地数据（冒烟截图、Electron dev profile、日志）
+.cache/
+
+# 日志与编译增量
+*.log
+*.tsbuildinfo
+
+# electron-vite 生成的临时配置 bundle（内嵌绝对路径，勿入库）
+electron.vite.config.*.mjs
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

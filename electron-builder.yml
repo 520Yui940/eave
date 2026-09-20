@@ -1,0 +1,50 @@
+appId: com.eave.app
+productName: Eave
+copyright: Copyright © 2026 520Yui940
+
+directories:
+  output: release-out
+  buildResources: build
+
+files:
+  - out/**/*
+  - package.json
+  - '!**/*.map'
+  - '!**/*.ts'
+
+extraResources:
+  - from: resources/scripts
+    to: scripts
+    filter:
+      - '**/*.ps1'
+  - from: resources/icon.png
+    to: icon.png
+
+asarUnpack:
+  - '**/node_modules/koffi/**'
+  - '**/node_modules/@koromix/**'
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: ${productName}-${version}-x64-setup.${ext}
+  legalTrademarks: Eave
+  requestedExecutionLevel: asInvoker
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 檐 Eave
+  deleteAppDataOnUninstall: false
+  runAfterFinish: true
+  installerLanguages:
+    - zh_CN
+  language: '2052'
+  uninstallDisplayName: 檐 Eave ${version}
