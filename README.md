@@ -20,6 +20,12 @@ Windows 10 / 11 桌面悬浮胶囊 —— 一条 190×34 的小胶囊停在屏�
 - **主题**：深色 / 浅色 / 跟随系统，深夜时段自动转暗；全部动效走合成器（transform / opacity），
   含省电档与 `prefers-reduced-motion` 支持。
 
+## 下载安装
+
+从 [Releases](https://github.com/520Yui940/eave/releases) 下载最新版
+`Eave-x.y.z-x64-setup.exe` 双击安装即可（Windows 10 17763+ / Windows 11）。
+`.blockmap` 附件是自动更新的增量索引，手动安装无需下载。
+
 ## 技术栈
 
 Electron 44 · React 19 · TypeScript · Vite 7 · electron-vite 5 · koffi（原生 FFI，预编译，无需 C++ 工具链）
